@@ -4,6 +4,7 @@
     "config": {
         "sort-packages": true
     },
+    "version": "1.0.0",
     "require": {
         "magento/framework": "*",
         "magento/magento-composer-installer": "*",
@@ -13,6 +14,12 @@
     "license": [
         "OSL-3.0",
         "AFL-3.0"
+    ],
+    "minimum-stability": "dev",
+    "keywords": [
+        "magento 2",
+        "magento 2 queue",
+        "magento consumer"
     ],
     "autoload": {
         "files": [

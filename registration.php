@@ -1,9 +1,7 @@
 <?php
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Magento_MessageQueue', __DIR__);
+ComponentRegistrar::register(
+    ComponentRegistrar::MODULE, 'Empisoft_MessageQueue', __DIR__
+);
