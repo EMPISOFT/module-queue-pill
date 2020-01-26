@@ -7,7 +7,7 @@
         <arguments>
             <argument name="commands" xsi:type="array">
                 <item name="empisoft_update_queue_process_pill"
-                      xsi:type="object">Empisoft\MessageQueue\Console\UpdateProcessPill</item>
+                      xsi:type="object">Empisoft\MessageQueue\Console\UpdatePoisonPillCommand</item>
             </argument>
         </arguments>
     </type>
