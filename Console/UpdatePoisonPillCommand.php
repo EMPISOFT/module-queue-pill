@@ -13,17 +13,17 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class UpdatePoisonPillCommand extends Command
 {
-    const COMMAND_QUEUE_POISON_PILL_UPDATE = 'queue:poison-pill:update';
+    private const COMMAND_QUEUE_POISON_PILL_UPDATE = 'queue:poison-pill:update';
 
     /**
-     * @var \Magento\Framework\MessageQueue\PoisonPill\PoisonPillPutInterface
+     * @var PoisonPillPutInterface
      */
-    private $poisonPillPut;
+    private PoisonPillPutInterface $poisonPillPut;
 
     /**
      * UpdateProcessPill constructor.
      *
-     * @param \Magento\Framework\MessageQueue\PoisonPill\PoisonPillPutInterface $poisonPillPut
+     * @param PoisonPillPutInterface $poisonPillPut
      * @param string|null $name
      */
     public function __construct(
@@ -46,7 +46,7 @@ class UpdatePoisonPillCommand extends Command
     /**
      * {@inheritdoc}
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName(self::COMMAND_QUEUE_POISON_PILL_UPDATE);
         $this->setDescription('Update poison pill value');
